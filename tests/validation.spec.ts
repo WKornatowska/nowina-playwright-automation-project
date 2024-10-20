@@ -90,7 +90,7 @@ test.describe("Signed documents validation", () => {
 
     //An error message should notify the user that the document format is not recognised.
     await expect(errorPage.errorMessage).toBeVisible();
-    expect(
+    await expect(
       await errorPage.getErrorMessageByText(
         "Oops... An error occurred! Document format not recognized/handled"
       )
