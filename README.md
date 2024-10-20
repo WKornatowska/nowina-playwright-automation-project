@@ -7,6 +7,7 @@ This is a small test automation project that includes two test cases for validat
 - [Installation](#installation)
 - [Project Structure](#project-structure)
 - [Running Tests](#running-tests)
+- [Reporting](#reporting)
 
 ## Overview
 This project is an automation framework using [Playwright](https://playwright.dev/), a powerful browser automation tool that allows for end-to-end testing of web applications across multiple browsers. The framework is designed to facilitate testing across various scenarios, ensuring the reliability and performance of web applications.
@@ -33,6 +34,8 @@ Before you begin, ensure you have the following installed:
     ```
 
 ## Project structure
+
+```plaintext
 nowina-playwright-automation-project/
 ├── node_modules/                               # Automatically generated directory for installed packages
 ├── pages/                                      # Page object models
@@ -51,17 +54,20 @@ nowina-playwright-automation-project/
 ├── playwright.config.ts                        # Playwright configuration 
 ├── package.json                                # NPM package file
 └── README.md                                   # Project documentation
+```
 
 ## Running tests
 To run the tests, execute the following command:
-```bash 
-    npx playwright test
-```
+    ```bash 
+        npx playwright test
+    ```
 
 To run the tests using Playwright UI, execute following command:
-```bash
-npx playwright test -ui
-```
+    ```bash
+    npx playwright test -ui
+    ```
 ## Reporting
 To open the HTML report after running your tests, execute the following command:
-npx playwright show-report
+    ```bash
+    npx playwright show-report
+    ```
