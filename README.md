@@ -10,7 +10,9 @@ This is a small test automation project that includes two test cases for validat
 - [Reporting](#reporting)
 
 ## Overview
-This project is an automation framework using [Playwright](https://playwright.dev/), a powerful browser automation tool that allows for end-to-end testing of web applications across multiple browsers. The framework is designed to facilitate testing across various scenarios, ensuring the reliability and performance of web applications.
+This test automation project is built to cover two test cases using Playwright, a robust framework for test automation. I chose Playwright because it works well with different browsers and can handle modern web applications. The project is set up to be easy to maintain and grow, making it simple to add or change tests in the future.
+
+The design separates test data, page objects, and configuration files to keep everything organized. Only the page elements needed for the two test cases are included in the page object files, keeping the project simple and focused on the required tests.
 
 ## Prerequisites
 Before you begin, ensure you have the following installed:
