@@ -1,0 +1,14 @@
+{
+  "name": "nowina-playwright-automation-project",
+  "version": "1.0.0",
+  "description": "This is a small test automation project that includes two test cases for validating signed documents",
+  "main": "index.js",
+  "scripts": {},
+  "keywords": [],
+  "author": "Wiktoria Kornatowska",
+  "license": "ISC",
+  "devDependencies": {
+    "@playwright/test": "^1.48.1",
+    "@types/node": "^22.7.7"
+  }
+}
