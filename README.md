@@ -58,16 +58,16 @@ nowina-playwright-automation-project/
 
 ## Running tests
 To run the tests, execute the following command:
-    ```bash 
+    ``` 
         npx playwright test
     ```
 
 To run the tests using Playwright UI, execute following command:
-    ```bash
+    ```
     npx playwright test -ui
     ```
 ## Reporting
 To open the HTML report after running your tests, execute the following command:
-    ```bash
+    ```
     npx playwright show-report
     ```
