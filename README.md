@@ -66,7 +66,7 @@ To run the tests, execute the following command:
 
 To run the tests using Playwright UI, execute following command:
     ```
-    npx playwright test -ui
+    npx playwright test --ui
     ```
 ## Reporting
 To open the HTML report after running your tests, execute the following command:
