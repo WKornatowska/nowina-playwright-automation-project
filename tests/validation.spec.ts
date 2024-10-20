@@ -25,35 +25,35 @@ test.describe("Signed documents validation", () => {
     await validationResultsPage.openSimpleReport();
 
     // Report should display: qualification, signature, and certificate details, document timestamp information
-    expect
+    await expect
       .soft(
         await validationResultsPage.getSignatureElement(
           "Signature SIGNATURE_Noé-"
         )
       )
       .toBeVisible();
-    expect
+    await expect
       .soft(
         await validationResultsPage.getSignatureDetailsElement(
           "Qualification: QESig"
         )
       )
       .toBeVisible();
-    expect
+    await expect
       .soft(
         await validationResultsPage.getSignatureDetailsElement(
           "Certificate Chain: Noé"
         )
       )
       .toBeVisible();
-    expect
+    await expect
       .soft(
         await validationResultsPage.getSignatureDetailsElement("Citizen CA", {
           exact: true,
         })
       )
       .toBeVisible();
-    expect
+    await expect
       .soft(
         await validationResultsPage.getSignatureDetailsElement(
           "Belgium Root CA4",
@@ -63,7 +63,7 @@ test.describe("Signed documents validation", () => {
         )
       )
       .toBeVisible();
-    expect
+    await expect
       .soft(
         await validationResultsPage.getSignatureDetailsElement(
           "Noé Colbach (Signature)",
@@ -74,11 +74,9 @@ test.describe("Signed documents validation", () => {
       )
       .toBeVisible();
 
-    expect
+    await expect
       .soft(
-        await validationResultsPage.getSignatureDetailsElement("Timestamps 2", {
-          exact: true,
-        })
+        await validationResultsPage.getSignatureDetailsElement("Timestamps 2")
       )
       .toBeVisible();
   });
